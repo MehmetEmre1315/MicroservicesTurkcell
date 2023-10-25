@@ -12,5 +12,6 @@ import lombok.NoArgsConstructor;
 public class CreatedOrderResponse {
     private short orderId;
     private String inventoryCode;
-    private Integer amount;
+    private short stockAmount;
+    private Boolean hasStock;
 }

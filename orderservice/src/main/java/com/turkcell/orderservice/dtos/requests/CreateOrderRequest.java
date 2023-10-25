@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CreateOrderRequest {
     private String inventoryCode;
-    private Integer amount;
+    private short amount;
 }

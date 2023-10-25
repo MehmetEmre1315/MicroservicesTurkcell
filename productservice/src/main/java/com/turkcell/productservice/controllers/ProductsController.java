@@ -24,4 +24,8 @@ public class ProductsController {
                                       @RequestParam int requiredStock){
         return productService.getByInventoryCode(invCode, requiredStock);
     }
+    @GetMapping("get-stock")
+    public Integer getStockByInventoryCode(@RequestParam String invCode){
+        return productService.getStockByCode(invCode);
+    }
 }
