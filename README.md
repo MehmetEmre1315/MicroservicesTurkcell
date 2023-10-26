@@ -1,15 +1,23 @@
 # MicroservicesTurkcell
 Turkcell Bootcamp Çalışması
 
-productservice, database olarak mongodb kullanmakta, 8083 portunu kullanıyor, swagger arayüzü:
+productservice, database olarak mongodb kullanmakta, 6002 portunu kullanıyor, swagger arayüzü:
 
-http://localhost:8083/swagger-ui/index.html
+http://localhost:6002/swagger-ui/index.html
 
-orderservice,database olarak postgreSql kullanmakta 8082 portunu kullanıyor, swagger arayüzü:
+orderservice,database olarak postgreSql kullanmakta 7002 portunu kullanıyor, swagger arayüzü:
 
-http://localhost:8082/swagger-ui/index.html
+http://localhost:7002/swagger-ui/index.html
 
-Disco
+# Service Discovery
+Spring Eureka ile aynı servis birden çok portta çalışabiliyor.
+Servisler arası bağlantı static belirtilmeden yük durumuna göre açık olan 
+portla yapılabiliyor. Seçilecek Port boşta olan herhangi bir port oluyor,
+IDE üzerinden istenilen port seçimi yapılmakta
+
+Eureka portu:
+
+http://localhost:8761/
 
 
 
