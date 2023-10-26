@@ -21,7 +21,7 @@ public class OrderManager implements OrderService{
     public Boolean submitOrder(CreateOrderRequest request) {
         Boolean hasStock = webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8083/api/v1/products/check-stock",
+                .uri("http://product-service/api/v1/products/check-stock",
                         (uriBuilder) -> uriBuilder
                                 .queryParam("invCode",request.getInventoryCode())
                                 .queryParam("requiredStock",request.getAmount())
@@ -36,7 +36,7 @@ public class OrderManager implements OrderService{
     public CreatedOrderResponse submitOrder2(CreateOrderRequest request) {
         Boolean hasStock = webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8083/api/v1/products/check-stock",
+                .uri("http://product-service/api/v1/products/check-stock",
                         (uriBuilder) -> uriBuilder
                                 .queryParam("invCode",request.getInventoryCode())
                                 .queryParam("requiredStock",request.getAmount())
@@ -46,7 +46,7 @@ public class OrderManager implements OrderService{
                 .block();
         int getStockAmount = webClientBuilder.build()
                 .get()
-                .uri("http://localhost:8083/api/v1/products/get-stock",
+                .uri("http://product-service/api/v1/products/get-stock",
                         (uriBuilder) -> uriBuilder
                                 .queryParam("invCode",request.getInventoryCode())
                                 .build())
