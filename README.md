@@ -9,6 +9,8 @@ orderservice,database olarak postgreSql kullanmakta 8082 portunu kullanıyor, sw
 
 http://localhost:8082/swagger-ui/index.html
 
+Disco
+
 
 
 
