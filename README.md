@@ -19,6 +19,11 @@ Eureka portu:
 
 http://localhost:8761/
 
+# Api Gateway
+Tek bir port üzerinden üzerinden gelen requestler önce service discovery'e sonra
+uygun olan micro servise
+
+http://localhost:8080/eureka/web
 
 
 
