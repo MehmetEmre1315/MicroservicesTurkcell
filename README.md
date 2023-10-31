@@ -3,11 +3,11 @@ Turkcell Bootcamp Çalışması
 
 productservice, database olarak mongodb kullanmakta, 6002 portunu kullanıyor, swagger arayüzü:
 
-http://localhost:6002/swagger-ui/index.html
+http://localhost:6001/swagger-ui/index.html
 
 orderservice,database olarak postgreSql kullanmakta 7002 portunu kullanıyor, swagger arayüzü:
 
-http://localhost:7002/swagger-ui/index.html
+http://localhost:7001/swagger-ui/index.html
 
 # Service Discovery
 Spring Eureka ile aynı servis birden çok portta çalışabiliyor.
@@ -19,6 +19,11 @@ Eureka portu:
 
 http://localhost:8761/
 
+# Api Gateway
+Tek bir port üzerinden üzerinden gelen requestler önce service discovery'e sonra
+uygun olan micro servise yönlendiriliyor.
+
+http://localhost:8080/eureka/web
 
 
 
