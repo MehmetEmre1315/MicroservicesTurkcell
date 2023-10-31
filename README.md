@@ -21,7 +21,7 @@ http://localhost:8761/
 
 # Api Gateway
 Tek bir port üzerinden üzerinden gelen requestler önce service discovery'e sonra
-uygun olan micro servise yönlendiriliyor.
+uygun olan micro servise yönlendiriliyor. 8080 portunu kullanmakta
 
 http://localhost:8080/eureka/web
 
