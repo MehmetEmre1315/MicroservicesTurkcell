@@ -25,6 +25,10 @@ uygun olan micro servise yönlendiriliyor. 8080 portunu kullanmakta
 
 http://localhost:8080/eureka/web
 
+# Keycloak ve OAuth2
+Keycloak 8181 portunu kullanıyor. Authorization tipi OAuth 2.0
+kullanarak JWT üretiliyor.
+
 
 
 
