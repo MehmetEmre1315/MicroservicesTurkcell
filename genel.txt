@@ -5,3 +5,35 @@ https://cloud.spring.io/spring-cloud-gateway/multi/multi_gateway-request-predica
 
 css dosyasını almak (euraka) için ek route yazıldı
 # kullan?c? abc gönderdi ben bunu order serviceine /orders diye
+
+docker build -t orderservice .
+aynı dosyada terminele yaz, sondaki noktayı unutma
+
+docker run -d -p 8081:8081 orderservice
+PS C:\2023_Kodlama\javaTurkcell\turkcell.microservices\orderservice> docker run -d -p 8081:8081 orderservice
+
+docker run -d -p 8082:8081 orderservice
+docker run -d -p 8081:8081 orderservice
+
+json ve yaml birbirine benziyor
+
+#docker image'ını configure et
+#sıfır kurulumu olan bir linux makinaya bu uygulamayı kurmak
+
+#alias => takma ad
+# java kurmak
+FROM openjdk:17-slim as build
+
+# build dosyalarını kopyalamak
+#COPY LOCAL_YOL                              CLOUD_YOLU
+COPY  target/discovery-server-0.0.1-SNAPSHOT.jar discovery-server-0.0.1-SNAPSHOT.jar
+
+# build dosyalarını ayağa kaldırmak
+#java -jar orderservice-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "discovery-server-0.0.1-SNAPSHOT.jar"]
+
+
+# Docker Compose
+docker-compose up -d
+docker-compose down
+

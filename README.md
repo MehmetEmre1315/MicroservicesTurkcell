@@ -23,12 +23,15 @@ http://localhost:8761/
 Tek bir port üzerinden üzerinden gelen requestler önce service discovery'e sonra
 uygun olan micro servise yönlendiriliyor. 8080 portunu kullanmakta
 
-http://localhost:8080/eureka/web
+http://localhost:8020/eureka/web
 
 # Keycloak ve OAuth2
 Keycloak 8181 portunu kullanıyor. Authorization tipi OAuth 2.0
 kullanarak JWT üretiliyor.
 
+# Docker
+yml dosyası konfigirasyonu ile uygulama dockerize edildi. Docker hub linki
+https://hub.docker.com/repositories/mehmetemre46
 
 
 
