@@ -7,6 +7,7 @@ css dosyasını almak (euraka) için ek route yazıldı
 # kullan?c? abc gönderdi ben bunu order serviceine /orders diye
 
 docker build -t orderservice .
+docker build -t mehmetemre46/orderservice .
 aynı dosyada terminele yaz, sondaki noktayı unutma
 
 docker run -d -p 8081:8081 orderservice
