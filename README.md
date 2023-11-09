@@ -33,6 +33,11 @@ kullanarak JWT üretiliyor.
 yml dosyası konfigirasyonu ile uygulama dockerize edildi. Docker hub linki
 https://hub.docker.com/repositories/mehmetemre46
 
+# Kafka
+Kafka, zookeeper ile birlikte docker üzerinden çalışıyor. Product
+Service üzerinden check stock get isteği atıldığında, Notification 
+Service ile kafka ile asekron bağlanıyor, cevap Notification Service
+üzerinden (terminali) veriliyor. Kafka Manager ile kafka izleniyor.
 
 
 # Grup çalışmasında bulunanlar:

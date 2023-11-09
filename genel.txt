@@ -38,3 +38,7 @@ ENTRYPOINT ["java", "-jar", "discovery-server-0.0.1-SNAPSHOT.jar"]
 docker-compose up -d
 docker-compose down
 
+mongodb server serviceste kapattık, mongo compassta artık localde bağlanmıyor
+
+docker compose stop
+docker-compose restart
